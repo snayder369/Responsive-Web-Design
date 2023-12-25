@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Form Example</title>
+</head>
+<body>
+  <h1 id="title">Form Title</h1>
+  <p id="description">Short explanation about the form.</p>
+
+  <form id="survey-form">
+    <label for="name" id="name-label">Name:</label>
+    <input type="text" id="name" placeholder="Enter your name" required>
+
+    <label for="email" id="email-label">Email:</label>
+    <input type="email" id="email" placeholder="Enter your email" required>
+
+    <label for="number" id="number-label">Number:</label>
+    <input type="number" id="number" placeholder="Enter a number" min="0" max="100" required>
+
+    <label for="dropdown">Select an option:</label>
+    <select id="dropdown">
+      <option value="option1">Option 1</option>
+      <option value="option2">Option 2</option>
+    </select>
+
+    <fieldset>
+      <legend>Select an option:</legend>
+      <label>
+        <input type="radio" name="radioGroup" value="optionA">
+        Option A
+      </label>
+      <label>
+        <input type="radio" name="radioGroup" value="optionB">
+        Option B
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Select several fields:</legend>
+      <label>
+        <input type="checkbox" name="checkboxGroup" value="value1">
+        Value 1
+      </label>
+      <label>
+        <input type="checkbox" name="checkboxGroup" value="value2">
+        Value 2
+      </label>
+    </fieldset>
+
+    <label for="comments">Additional comments:</label>
+    <textarea id="comments" placeholder="Enter your comments here"></textarea>
+
+    <button type="submit" id="submit">Submit</button>
+  </form>
+</body>
+</html>
